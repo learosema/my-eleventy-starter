@@ -1,6 +1,6 @@
 ---
 title: My Eleventy Starter
-description: A small session about HTML, life hacks, every day tips, myths
+description: This is a placeholder Hello-World page.
 layout: base
 ---
 ## Hello World
