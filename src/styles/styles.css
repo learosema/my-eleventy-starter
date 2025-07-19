@@ -1,0 +1,74 @@
+:root {
+  --h1-color: light-dark(#3f126c, #ffe3f1);
+  --headline-color: light-dark(deeppink, hotpink);
+  --anchor-color: light-dark(#12c, #9cf);
+  --code-color: light-dark(#079, #2cf);
+  --kbd-bg-color: light-dark(rgb(255, 214, 234), #663399);
+  --kbd-color: light-dark(#000, #fff);
+  --footer-bg-color: light-dark(#eee, #000);
+  --footer-color: light-dark(#111, #fff);
+}
+
+html {
+  color-scheme: dark light;
+  accent-color: hotpink;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  font-weight: normal;
+  font-size: 120%;
+  line-height: 1.5;
+  margin: 1rem 0 0 0;
+}
+
+.container {
+  width: min(100% - 3rem, var(--container-max, 80ch));
+  margin-inline: auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--headline-color);
+}
+
+h1 {
+  color: var(--h1-color);
+  font-size: 3.815rem;
+  border: 0.25rem solid currentColor;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+h2 {
+  font-size: 3.052rem;
+}
+
+h3 {
+  font-size: 2.441rem;
+}
+
+code {
+  color: var(--code-color);
+}
+
+a {
+  color: var(--anchor-color);
+}
+
+kbd {
+  background: var(--kbd-bg-color);
+  color: var(--kbd-color);
+  border-radius: 0.125em;
+  padding: 0.25em;
+}
+
+.footer {
+  background: var(--footer-bg-color);
+  color: var(--footer-color);
+  margin-block-start: 6rem;
+  text-align: center;
+  padding-block: 2rem;
+}
